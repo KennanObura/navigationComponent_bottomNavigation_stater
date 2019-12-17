@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_shopping"
+    app:startDestination="@id/shoppingListFragment">
+
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="kennan.co.ke.littlebar.ui.shopping.ShoppingListFragment"
+        android:label="shopping_list_fragment"
+        tools:layout="@layout/shopping_list_fragment" >
+        <action
+            android:id="@+id/action_shoppingListFragment_to_cocktailRecipeFragment"
+            app:destination="@id/cocktailRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocktailRecipeFragment"
+        android:name="kennan.co.ke.littlebar.ui.home.CocktailRecipeFragment"
+        android:label="cock_item_fragment"
+        tools:layout="@layout/cock_item_fragment" />
+</navigation>

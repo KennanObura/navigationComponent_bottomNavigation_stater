@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_gig"
+    app:startDestination="@id/gigHomeFragment">
+
+    <fragment
+        android:id="@+id/gigHomeFragment"
+        android:name="kennan.co.ke.littlebar.ui.gig.GigHomeFragment"
+        android:label="gig_home_fragment"
+        tools:layout="@layout/gig_home_fragment" >
+        <action
+            android:id="@+id/action_gigHomeFragment_to_createGigFragment"
+            app:destination="@id/createGigFragment" />
+        <action
+            android:id="@+id/action_gigHomeFragment_to_gigThemesFragment"
+            app:destination="@id/gigThemesFragment" />
+        <action
+            android:id="@+id/action_gigHomeFragment_to_gigItemsFragment"
+            app:destination="@id/gigItemsFragment" />
+        <action
+            android:id="@+id/action_gigHomeFragment_to_giggerItemsFragment"
+            app:destination="@id/giggerItemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createGigFragment"
+        android:name="kennan.co.ke.littlebar.ui.gig.CreateGigFragment"
+        android:label="create_gig_fragment"
+        tools:layout="@layout/create_gig_fragment" />
+    <fragment
+        android:id="@+id/gigThemesFragment"
+        android:name="kennan.co.ke.littlebar.ui.gig.GigThemesFragment"
+        android:label="gig_themes_fragment"
+        tools:layout="@layout/gig_themes_fragment" />
+    <fragment
+        android:id="@+id/gigItemsFragment"
+        android:name="kennan.co.ke.littlebar.ui.gig.GigItemsFragment"
+        android:label="gig_items_fragment"
+        tools:layout="@layout/gig_items_fragment" />
+    <fragment
+        android:id="@+id/giggerItemsFragment"
+        android:name="kennan.co.ke.littlebar.ui.gig.GiggerItemsFragment"
+        android:label="gigger_items_fragment"
+        tools:layout="@layout/gigger_items_fragment" />
+</navigation>
